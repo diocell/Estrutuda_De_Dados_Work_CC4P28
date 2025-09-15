@@ -6,7 +6,7 @@
 int main() {
     ListaSeq listaSeq;
     ListaEnc listaEnc;
-    int usandoSeq = 1; // por padrão começa na sequencial
+    int usandoSeq = 1; // por padrão começa SEMPRE na sequencial
     int opcao, valor, pos;
 
     lsq_init(&listaSeq);

@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "lista_enc.h"
 
-
 void len_init(ListaEnc *L) {
     L->inicio = NULO;
     L->tamanho = 0;
@@ -13,12 +12,11 @@ void len_init(ListaEnc *L) {
     L->nos[CAP - 1].prox = NULO;
 }
 
-// Inserir no início
 int len_push_front(ListaEnc *L, int v) {
-    if (L->livre == NULO) return 0; // lista cheia
+    if (L->livre == NULO) return 0;
 
-    int novo = L->livre;             // pega nó livre
-    L->livre = L->nos[novo].prox;    // atualiza próximo nó livre
+    int novo = L->livre;
+    L->livre = L->nos[novo].prox;
 
     L->nos[novo].valor = v;
     L->nos[novo].prox = L->inicio;
@@ -28,9 +26,8 @@ int len_push_front(ListaEnc *L, int v) {
     return 1;
 }
 
-// Inserir no final
 int len_push_back(ListaEnc *L, int v) {
-    if (L->livre == NULO) return 0; // lista cheia
+    if (L->livre == NULO) return 0; // se estiver com lista cheia
 
     int novo = L->livre;
     L->livre = L->nos[novo].prox;
@@ -51,7 +48,6 @@ int len_push_back(ListaEnc *L, int v) {
     return 1;
 }
 
-// Remover a primeira ocorrência
 int len_remove_val(ListaEnc *L, int v) {
     if (L->inicio == NULO) return 0;
 
@@ -78,7 +74,6 @@ int len_remove_val(ListaEnc *L, int v) {
     return 0; // não encontrado
 }
 
-// Buscar índice do valor
 int len_index_of(const ListaEnc *L, int valor) {
     int idx = 0;
     int i = L->inicio;
@@ -91,7 +86,6 @@ int len_index_of(const ListaEnc *L, int valor) {
     return NULO;
 }
 
-// Imprimir lista
 void len_print(const ListaEnc *L) {
     int i = L->inicio;
     printf("[");
@@ -103,7 +97,6 @@ void len_print(const ListaEnc *L) {
     printf("]\n");
 }
 
-// Limpar lista
 void len_clear(ListaEnc *L) {
     L->inicio = NULO;
     L->tamanho = 0;
