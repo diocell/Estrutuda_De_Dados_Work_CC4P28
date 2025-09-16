@@ -1,25 +1,29 @@
-# Estrutuda_De_Dados_Work_CC4P28
-Trabalho de Estrutura de Dados realizado para entrega ao professor em classe.
+# 📚 Estrutura de Dados – Trabalho CC4P28
 
-COMPILAR E EXECUTAR ARQUIVO DE TESTE (COMANDOS FEITOS A MÃO) PARA A LISTA SEQUENCIAL
+Trabalho da disciplina de **Estrutura de Dados**, desenvolvido para entrega em sala de aula.
+
+---
+
+## 🚀 Compilação e Execução
+
+### 🔹 Lista Sequencial
+```bash
 gcc -Wall -Wextra -O2 -Iinclude teste_seq.c lista_seq.c -o teste_seq.exe
-
-PARA EXECUTAR, RODE:
 .\teste_seq.exe
+```
 
-COMPILAR E EXECUTAR ARQUIVO DE TESTE (COMANDOS FEITOS A MÃO) PARA A LISTA ENCADEADA
+### 🔹 Lista Encadeada
+```bash
 gcc -Wall -Wextra -O2 -Iinclude teste_enc.c lista_enc.c -o teste_enc.exe
-
-PARA EXECUTAR, RODE:
 .\teste_enc.exe
+```
 
+### 🔹 Programa Integrado (Menu de Listas)
+```bash
+gcc -Wall -Wextra -O2 -Iinclude menu_listas.c lista_seq.c lista_enc.c -o menu_listas.exe
+.\menu_listas.exe
+```
 
-COMPILAR E EXECUTAR ARQUIVO DE PROGRAMA INTEGRADO, PARA NAVEGAÇÃO E MANIPULAÇÃO PERSONALIZADA
- gcc -Wall -Wextra -O2 -Iinclude menu_listas.c lista_seq.c lista_enc.c -o menu_listas.exe
-
-PARA EXECUTAR, RODE:
- .\menu_listas.exe
-
-# REALIZADO POR:
-# -> DIOGO CANEVAROLLO - G88EGH6
-# -> IGOR BELTRAMELLO - G058AI0
+👥 Integrantes
+🔹Diogo Canevarollo – G88EGH6
+🔹Igor Beltramello – G058AI0
